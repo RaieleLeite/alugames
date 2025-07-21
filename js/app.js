@@ -15,15 +15,15 @@ function alterarStatus(numCard){
 
     if(!divStatus.classList.contains('dashboard__item__img--rented')){
 
-        buttonStatus.textContent = 'Devolver';
+        buttonStatus.textContent = 'Return';
         buttonStatus.classList.add('dashboard__item__button--return');
         divStatus.classList.add('dashboard__item__img--rented');
 
         jogosAlugados = jogosAlugados + 1;
     } else {
-        let confirmacaoDevolucao = prompt(`Você realmente deseja devolver o jogo ${nomeJogo} ? (1 - Sim | 2 - Não)`);
+        let confirmacaoDevolucao = prompt(`Do you really want to return the game ${nomeJogo} ? (1 - Yes | 2 - No)`);
         if(confirmacaoDevolucao == 1){
-            buttonStatus.textContent = 'Alugar';
+            buttonStatus.textContent = 'Rent';
             buttonStatus.classList.remove('dashboard__item__button--return');
             divStatus.classList.remove('dashboard__item__img--rented');
             jogosAlugados = jogosAlugados - 1;
