@@ -1,0 +1,89 @@
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .body {
+    padding: 2rem;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divisor {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .page-title {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .dashboard__items {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .dashboard__item__name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .dashboard__item__button {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .dashboard__item__img img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .body {
+    padding: 2rem;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divisor {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .page-title {
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .dashboard__items {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .dashboard__item__img img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .dashboard__item__name {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .dashboard__item__button {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+}
